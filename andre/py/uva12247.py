@@ -5,6 +5,8 @@ UVa Online Judge Problem: 12247 Jollo
 This code verify which is the last card that the prince needs 
 to receive from the servant and win on Jollo from his sister.
 
+Tested and working on:
+24113219	12247	Jollo	Accepted	PYTH3	0.010	2019-10-27 18:16:31
 """
 
 """
