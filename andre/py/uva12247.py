@@ -57,7 +57,7 @@ def main():
         # Verify if the first prince's card is bigger than the last princess card
         # This means that the prince already has 2 bigger cards
         if(princeCards[0] > princessCards[2]):
-            for i in range(1, 52):
+            for i in range(1, 53):
                 if(validCards[i]):
                     newCard = i
                     break
@@ -68,7 +68,7 @@ def main():
             # Verify if the second prince's card is bigger than the last Princess Card
             # This means that the prince still have a chance if theres any card bigger than princess[2]
             if(princeCards[1] > princessCards[2]):
-                for i in range(princessCards[2] + 1, 52):
+                for i in range(princessCards[2] + 1, 53):
                     if(validCards[i]):
                         newCard = i
                         break
@@ -79,7 +79,7 @@ def main():
             # Verify if the first prince's card is bigger than the second Princess Card
             # This means that the prince still have a chance if theres any card bigger than princess[1]
             if(princeCards[0] > princessCards[1]):
-                for i in range(princessCards[1], 52):
+                for i in range(princessCards[1], 53):
                     if(validCards[i]):
                         newCard = i
                         break
