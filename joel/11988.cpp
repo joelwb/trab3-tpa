@@ -8,13 +8,13 @@ int main() {
     string line;
 
     while (getline(cin, line) && line != "") {
-        list<string> stack;
+        list<string> list;
         string buffer = "";
 
         bool home = false;
         for (int i = 0; i < line.size(); i++) {
             if (line[i] == ']' || line[i] == '[') {
-                if (!buffer.empty()) stack.push_front(buffer);
+                if (!buffer.empty()) list.push_front(buffer);
                 buffer = "";
                 home = line[i] == '[';
             } else if (home) {
@@ -22,13 +22,13 @@ int main() {
             }
         }
 
-        if (!buffer.empty()) stack.push_front(buffer);
+        if (!buffer.empty()) list.push_front(buffer);
 
         buffer = "";
         home = false;
         for (int i = 0; i < line.size(); i++) {
             if (line[i] == ']' || line[i] == '[' ) {
-                if (!buffer.empty()) stack.push_back(buffer);
+                if (!buffer.empty()) list.push_back(buffer);
                 buffer = "";
                 home = line[i] == '[';
             } else if (!home) {
@@ -36,12 +36,12 @@ int main() {
             }
         }
 
-        if (!buffer.empty()) stack.push_back(buffer);
+        if (!buffer.empty()) list.push_back(buffer);
 
-        int size = stack.size();
+        int size = list.size();
         for (int i = 0; i < size; i++) {
-            cout << stack.front();
-            stack.pop_front();
+            cout << list.front();
+            list.pop_front();
         }
 
         cout << endl;
