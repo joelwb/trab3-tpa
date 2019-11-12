@@ -1,3 +1,9 @@
+/*
+Autor: Joel Will Belmiro 
+
+Deve-se achar a mediana a cada vez que se ler um linha de entrada
+*/
+
 #include <iostream>
 #include <math.h>
 #include <vector>

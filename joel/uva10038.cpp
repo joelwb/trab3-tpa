@@ -1,3 +1,10 @@
+/*
+Autor: Joel Will Belmiro 
+
+Deve-se descobrir se dentro de uma sequência de números a diferença entre
+valores vizinhos será menor do que o tamanho da sequência menos 1
+*/
+
 #include <iostream>
 #include <stdlib.h>
 using namespace std;

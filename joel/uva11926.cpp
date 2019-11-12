@@ -1,3 +1,10 @@
+/*
+Autor: Joel Will Belmiro 
+
+O problema se resume em saber se existe conflitos entre os horários das tarefas
+onde haverá conflito se o horário de 2 ou mais tarefas estiverem em intersseção
+*/
+
 #include <iostream>
 #include <bitset>
 #include <string>

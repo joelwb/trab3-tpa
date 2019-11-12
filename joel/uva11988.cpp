@@ -1,3 +1,11 @@
+/*
+Autor: Joel Will Belmiro 
+
+O problema quer que se a partir de uma linha de texto com caracteres especiais
+servindo de auxiliadores, se obtenha o que ele chama de "Beiju Text",
+sem esses caracteres especiais
+*/
+
 #include <iostream>
 #include <string>
 #include <locale>

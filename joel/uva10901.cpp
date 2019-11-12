@@ -1,3 +1,11 @@
+/*
+Autor: Joel Will Belmiro 
+
+O problema deseja saber que horas cada carro conseguira chegar atravessar o rio,
+baseado na hora de chegada de cada um, no tempo de travessia, e quantidade de carros
+que a balsa consegue carregar de uma vez
+*/
+
 #include <iostream>
 #include <queue>
 #include <string>

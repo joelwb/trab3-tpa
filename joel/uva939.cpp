@@ -1,3 +1,12 @@
+/*
+Autor: Joel Will Belmiro 
+
+O problema informa o nome de algumas pessoas e o seu tipo de gene,
+e também informa alguns filhos dessas pessoas. Dado essas informações, deseja-se
+saber o tipo de gene dos filhos baseados nos tipos de gene dos pais.
+O problema impõe regras para descobrir qual o tipo de gene.
+*/
+
 #include <iostream>
 #include <map>
 #include <string>
