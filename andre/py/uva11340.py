@@ -31,22 +31,11 @@ def main():
             article = article + input()
         # end-for
 
-        # Iterate on the chars of the article and get its total occurrence
-        # taking care to dont reapeat the calculation
-        calculatedChar = {}
-        for char in article:
-            if(char not in calculatedChar.keys()):
-                totalChar = article.count(char)
-                calculatedChar[char] = totalChar
-            # end-if
-        # end
-
-        # iterate on the amount of chars and multiply by the paid value for each
+        # Iterate on the paid chars to sum the total value
         totalValue = 0
         for char in paidChars.keys():
-            if(char in calculatedChar.keys()):
-                totalValue = totalValue + (calculatedChar[char] * paidChars[char])
-            #end-if
+            totalChar = article.count(char)
+            totalValue = totalValue + (totalChar * paidChars[char])
         #end-for
 
         # print the result
