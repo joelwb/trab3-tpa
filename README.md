@@ -48,9 +48,9 @@ Repositório para o trabalho 3 de TPA
     
   9. Árvore Binária de Pesquisa (balanceada) (C++ STL map; Java TreeMap)  
 
-  • [UVa 00939 – Genes](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=11&page=show_problem&problem=880) 
+  • [UVa 00939 – Genes](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=11&page=show_problem&problem=880) :heavy_check_mark: 
 
-  • [UVa 10132 – File Fragmentation](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1073) :heavy_check_mark: 
+  • [UVa 10132 – File Fragmentation](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1073) 
     
   10. Conjuntos (C++ STL set; Java TreeSet)  
 
