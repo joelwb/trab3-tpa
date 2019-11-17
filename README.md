@@ -16,7 +16,7 @@ Repositório para o trabalho 3 de TPA
 
   • [UVa 10920 – Spiral Tap](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1861) :heavy_check_mark: 
 
-  • [UVa 11581 – Grid successors](https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2628) 
+  • [UVa 11581 – Grid successors](https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2628) :heavy_check_mark: 
     
   4. Ordenação (C++ STL algorithm; ou Java Collections)  
 
