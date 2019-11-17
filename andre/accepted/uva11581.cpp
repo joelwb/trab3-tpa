@@ -1,7 +1,16 @@
+/***
+Author: André Martins
+UVa Online Judge Problem: 12247 Jollo
+
+This code verify how many times it's necessary to change all the inputed matrix to Zero, its calculating the related cells by the module of 2.
+***/
+
+
 #include <iostream>
 
 using namespace std;
 
+// This function verify if the matrix has only 0's
 bool isAllZero(int g[3][3]) {
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 3; j++) {
@@ -11,6 +20,8 @@ bool isAllZero(int g[3][3]) {
 	return true;
 }
 
+
+// This function calculates the related cells, according to the following comments
 int  g[3][3], temp_matrix[3][3];
 void f() {
 
@@ -45,6 +56,7 @@ void f() {
 	temp_matrix[1][1] = (g[0][1] + g[1][0] + g[1][2] + g[2][1]) % 2;
 }
 
+// Update the matrix values to the calculated values
 void update_values(int g[3][3], int temp[3][3]) {
 	// Update g values
 	for (int i = 0; i < 3; i++) {
@@ -61,6 +73,8 @@ int main()
 
 	// equivalent to while(test_cases > 0){test_cases--;}
 	while (test_cases--) {
+		
+		// Input matrix
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 3; j++) {
 				char verify_line = '\n';
@@ -69,6 +83,7 @@ int main()
 			}
 		}
 
+		// Calculate the matrix cells while it's not only 0's
 		int actual_index = -1;
 		while (!isAllZero(g)) {
 			f();
@@ -76,6 +91,7 @@ int main()
 			actual_index++;
 		}
 
+		// Result
 		cout << actual_index << '\n';
 	}
 }

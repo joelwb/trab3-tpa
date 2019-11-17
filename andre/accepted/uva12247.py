@@ -2,11 +2,7 @@
 Author: André Martins
 UVa Online Judge Problem: 12247 Jollo
 
-This code verify which is the last card that the prince needs 
-to receive from the servant and win on Jollo from his sister.
-
-Tested and working on:
-24113219	12247	Jollo	Accepted	PYTH3	0.010	2019-10-27 18:16:31
+This code verify which is the last card that the servant needs to give the prince to win on Jollo.
 """
 
 """
@@ -56,8 +52,9 @@ def main():
         # Set the Default value when the prince lose.
         newCard = -1
 
-        # Verify if the first prince's card is bigger than the last princess card
-        # This means that the prince already has 2 bigger cards
+        # Verify if the smallest prince's card is bigger than the biggest princess card
+        # If its true, means that the prince already has 2 cards that are bigger than both sister's cards
+        # So, the prince already won and he can receive the smaller card in the deck.
         if(princeCards[0] > princessCards[2]):
             for i in range(1, 53):
                 if(validCards[i]):
@@ -67,8 +64,9 @@ def main():
             #end-for
         #end-if
         else:
-            # Verify if the second prince's card is bigger than the last Princess Card
-            # This means that the prince still have a chance if theres any card bigger than princess[2]
+            # Verify if the second prince's card is bigger than the biggest Princess Card
+            # If its true, means that the prince has at least one bigger card and he still have 
+            # a chance to win if theres any card bigger than princess[2] avaiable
             if(princeCards[1] > princessCards[2]):
                 for i in range(princessCards[2] + 1, 53):
                     if(validCards[i]):
@@ -78,8 +76,9 @@ def main():
                 #end-for
             #end-if
             
-            # Verify if the first prince's card is bigger than the second Princess Card
-            # This means that the prince still have a chance if theres any card bigger than princess[1]
+            # Verify if the smallest prince's card is bigger than the second Princess Card
+            # If its true, means that the prince still have a chance if theres any card bigger 
+            # than princess[1] avaiable
             if(princeCards[0] > princessCards[1]):
                 for i in range(princessCards[1], 53):
                     if(validCards[i]):
@@ -90,6 +89,7 @@ def main():
             #end-elif
         #end-else
         
+        # show the result
         print(newCard)
         cards, validCards, hasZeroInput = inputCards()
     #end-while 

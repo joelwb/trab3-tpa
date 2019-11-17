@@ -2,7 +2,7 @@
 Author: André Martins
 UVa Online Judge Problem: 11340 Newspaper
 
-This code calculates the total value of an inputed article
+This code calculates the total value to pay in an inputed article
 according with the value of each charactere and show
 
 """
