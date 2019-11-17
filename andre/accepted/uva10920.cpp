@@ -1,6 +1,5 @@
 /***
 	Author: André Martins
-	UVa Online Judge Problem: 10920 - Spiral Tap 
 
 	This code checks at which row and column is position P in a spiral matrix M
 ***/
