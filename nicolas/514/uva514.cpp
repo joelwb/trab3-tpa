@@ -1,3 +1,9 @@
+/*
+Autor: Nicolas Pereira Sampaio
+Deve-se descobrir se é possível colocar o trem em ordem de acordo com a chegada
+*/
+
+
 #include <iostream>
 #include <stack>
 using namespace std;

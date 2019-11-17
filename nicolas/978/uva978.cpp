@@ -1,3 +1,9 @@
+/*
+Autor: Nicolas Pereira Sampaio
+Deve-se descobrir qual dos 2 exércitos irá ganhar a guerra, baseado no número de campos
+*/
+
+
 #include <iostream>
 #include <set> 
 

@@ -1,3 +1,9 @@
+/*
+Autor: Nicolas Pereira Sampaio
+Deve-se descobrir a soma das potências de cada canto, sendo que um cubo tem esquinas, e a sua potência é a soma do peso de esquinas vizinhas
+*/
+
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

@@ -1,3 +1,9 @@
+/*
+Autor: Nicolas Pereira Sampaio
+Deve-se descobrir a ordem que vai ser empilhado os containers
+*/
+
+
 #include <iostream>
 #include <stack> 
 #include<vector>

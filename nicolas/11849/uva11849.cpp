@@ -1,3 +1,9 @@
+/*
+Autor: Nicolas Pereira Sampaio
+Deve-se descobrir se a coleção de cds da jill possui cds repetidos com a coleção de cds do jack
+*/
+
+
 #include <iostream>
 #include <set>
 
